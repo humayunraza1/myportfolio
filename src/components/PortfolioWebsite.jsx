@@ -617,7 +617,6 @@ const PortfolioWebsite = () => {
       >
         <div className="container mx-auto px-4 text-center text-gray-400">
           <p>© {new Date().getFullYear()} Humayun Raza. All rights reserved.</p>
-          <p className="mt-2 text-sm">Made with React 19 and shadcn/ui</p>
         </div>
       </footer>
     </div>
