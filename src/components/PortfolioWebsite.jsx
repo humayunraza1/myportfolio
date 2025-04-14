@@ -39,7 +39,7 @@ const PortfolioWebsite = () => {
         title: "Heuser PK | Educational Platform",
         description: "A landing page for an educational institute with a focus on user experience",
         year: "2023",
-        image: "/images/heuser.png",
+        image: "/images/heuser.webp",
         github: "#",
         live: "https://heuserpk.com",
         tech: ["Next.Js", "MongoDB", "Tailwind CSS"]
@@ -48,7 +48,7 @@ const PortfolioWebsite = () => {
       title: "RecruitWise | AI Recruitment Platform",
       description: "An AI-powered recruitment platform that matches candidates with job openings",
       year: "Ongoing",
-      image: "/images/recruitwise.png",
+      image: "/images/recruitwise.webp",
       github: "#",
       live: "https://recruitwise-frontend.vercel.app/",
       tech: ["ReactJS", "MongoDB", "Context API"]
@@ -57,7 +57,7 @@ const PortfolioWebsite = () => {
       title: "Azzy's Hardware | E-commerce Store",
       description: "An e-commerce platform for hardware products with a user-friendly interface",
       year: "Ongoing",
-      image: "/images/azzyshardware.png",
+      image: "/images/azzyshardware.webp",
       github: "#",
       live: "https://azzyshardware.store",
       tech: ["ReactJS", "Node.js", "Express", "Tailwind CSS", "Context API"]
@@ -78,27 +78,27 @@ const PortfolioWebsite = () => {
     {
       title: "Frontend",
       skills: [
-        {name: "ReactJS", image: '/images/React.png'}, 
+        {name: "ReactJS", image: '/images/React.webp'}, 
         {name: "JavaScript", image: "/images/js.webp"}, 
-        {name: "HTML", image: '/images/html.png'},
-        {name: "Tailwind CSS", image: "/images/tailwind.png"}
+        {name: "HTML", image: '/images/html.webp'},
+        {name: "Tailwind CSS", image: "/images/tailwind.webp"}
       ]
     },
     {
       title: "Backend",
       skills: [
-        {name: "Node.js", image: '/images/node.jpg'}, 
-        {name: "Express", image: "/images/express.png"}, 
-        {name: "MongoDB", image: '/images/MongoDB.png'},
+        {name: "Node.js", image: '/images/node.webp'}, 
+        {name: "Express", image: "/images/express.webp"}, 
+        {name: "MongoDB", image: '/images/MongoDB.webp'},
       ]
     },
     {
       title: "Tools & Others",
       skills: [
-        {name: "Git", image: '/images/git.png'}, 
-        {name: "Docker", image: "/images/docker.jpg"}, 
-        {name: "AWS", image: '/images/aws.jpeg'},
-        {name: "Azure", image: '/images/azure.png'},
+        {name: "Git", image: '/images/git.webp'}, 
+        {name: "Docker", image: "/images/docker.webp"}, 
+        {name: "AWS", image: '/images/aws.webp'},
+        {name: "Azure", image: '/images/azure.webp'},
       ]
     }
   ];
@@ -288,8 +288,9 @@ const PortfolioWebsite = () => {
                     {/* Profile Image */}
                     <div className="w-[300px] h-[400px] relative z-10 rounded-lg overflow-hidden border-2 border-[#222222]">
                       <img 
-                        src="/images/me.png" 
+                        src="/images/me.webp" 
                         alt="Humayun Raza" 
+                        loading='lazy'
                       />
                     </div>
                     
@@ -407,6 +408,7 @@ const PortfolioWebsite = () => {
                           src={`${skill.image}`} // Temporary placeholder - would use skill.image in production
                           alt={skill.name}
                           className="opacity-80"
+                          loading='lazy'
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#121212]/70"></div>
                       </div>
@@ -435,6 +437,7 @@ const PortfolioWebsite = () => {
                           src={`${skill.image}`} // Temporary placeholder - would use skill.image in production
                           alt={skill.name}
                           className="opacity-80"
+                          loading='lazy'
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#121212]/70"></div>
                       </div>
