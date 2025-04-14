@@ -296,7 +296,7 @@ const PortfolioWebsite = () => {
                     
                     {/* Floating Elements */}
                     <div className="absolute -right-10 top-1/4 w-20 h-20 bg-[#030303] border border-[#222222] rounded-full flex items-center justify-center z-20">
-                      <span className="text-[#4ADE80] text-3xl"><img className='w-10' src='/images/React.png'/></span>
+                      <span className="text-[#4ADE80] text-3xl"><img className='w-10' src='/images/React.webp'/></span>
                     </div>
                     <div className="absolute -left-5 bottom-1/4 w-14 h-14 bg-[#030303] border border-[#222222] rounded-lg flex items-center justify-center z-20">
                       <span className="text-[#4ADE80] text-2xl">{"</>"}</span>
