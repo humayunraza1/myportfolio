@@ -35,25 +35,28 @@ const PortfolioWebsite = () => {
   
   // Project data
   const projects = [
+      {
+        title: "Heuser PK | Educational Platform",
+        description: "A landing page for an educational institute with a focus on user experience",
+        year: "2024",
+        image: "/images/heuser.png",
+        github: "#",
+        live: "#",
+        tech: ["React", "Firebase", "Tailwind CSS", "Context API"]
+      },
     {
       title: "RecruitWise | AI Recruitment Platform",
       description: "An AI-powered recruitment platform that matches candidates with job openings",
+      year: "Ongoing",
       image: "/images/recruitwise.png",
       github: "#",
       live: "#",
       tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"]
     },
     {
-      title: "Heuser PK | Educational Platform",
-      description: "A landing page for an educational institute with a focus on user experience",
-      image: "/images/heuser.png",
-      github: "#",
-      live: "#",
-      tech: ["React", "Firebase", "Tailwind CSS", "Context API"]
-    },
-    {
       title: "Azzy's Hardware | E-commerce Store",
       description: "An e-commerce platform for hardware products with a user-friendly interface",
+      year: "Ongoing",
       image: "/images/azzyshardware.png",
       github: "#",
       live: "#",
@@ -505,7 +508,7 @@ const PortfolioWebsite = () => {
                   
                   <div className="mt-4 flex justify-between items-end">
                     <div>
-                      <div className="text-sm text-gray-500">2024</div>
+                      <div className="text-sm text-gray-500">{project.year}</div>
                       <h3 className="text-xl font-bold text-white">{project.title}</h3>
                       <div className="text-gray-500 uppercase text-xs tracking-wider">
                         {project.tech.slice(0, 2).join(' • ')}
