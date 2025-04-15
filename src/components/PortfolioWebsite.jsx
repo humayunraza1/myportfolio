@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MoveRight, Github, ExternalLink, Mail, Linkedin } from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/textarea';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import ProjectsSection from './ProjectsSection';
 
 const PortfolioWebsite = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -474,61 +475,7 @@ const PortfolioWebsite = () => {
         </section>
 
         {/* Projects Section */}
-        <section 
-          ref={sectionRefs.projects} 
-          className="min-h-screen py-16 bg-[#050505]"
-          style={{
-            backgroundColor: "#050505",
-          }}
-        >
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center justify-between mb-4">
-              <div className="text-sm text-gray-500">03</div>
-              <div className="text-sm text-gray-500 font-mono">//PORTFOLIO</div>
-              <div className="text-sm text-gray-500">2020 - 2024</div>
-            </div>
-
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-12">
-              LATEST PORTFOLIO
-            </h2>
-            
-            <p className="text-gray-400 max-w-lg mb-16">
-              My creative spirit comes alive in the digital realm. With nimble
-              fingers flying across the device.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {projects.map((project, index) => (
-                <div key={index} className="group relative">
-                  <div className="relative overflow-hidden rounded-md bg-[#121212]" style={{ backgroundColor: "#121212" }}>
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    
-                    {/* Small + marks */}
-                    <div className="absolute top-4 left-4 text-[#4ADE80] text-lg font-bold">+</div>
-                    <div className="absolute bottom-4 right-4 text-[#4ADE80] text-lg font-bold">+</div>
-                  </div>
-                  
-                  <div className="mt-4 flex justify-between items-end">
-                    <div>
-                      <div className="text-sm text-gray-500">{project.year}</div>
-                      <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                      <div className="text-gray-500 uppercase text-xs tracking-wider">
-                        {project.tech.slice(0, 2).join(' • ')}
-                      </div>
-                    </div>
-                    <button className="text-white">
-                      <MoveRight className="h-6 w-6" />
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProjectsSection/>
 
         {/* Contact Section */}
         <section 
