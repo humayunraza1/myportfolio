@@ -475,7 +475,9 @@ const PortfolioWebsite = () => {
         </section>
 
         {/* Projects Section */}
+        <section ref={sectionRefs.projects} > 
         <ProjectsSection/>
+        </section>
 
         {/* Contact Section */}
         <section 
@@ -530,15 +532,15 @@ const PortfolioWebsite = () => {
                 <div className="space-y-6">
                   <div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Email</div>
-                    <div className="text-[#4ADE80]">humayun.raza@example.com</div>
+                    <div className="text-[#4ADE80]">humayunraza.dev@gmail.com</div>
                   </div>
                   <div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Phone</div>
-                    <div className="text-white">+1 (555) 123-4567</div>
+                    <div className="text-white">+(92)316-1278341</div>
                   </div>
                   <div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</div>
-                    <div className="text-white">New York, NY, USA</div>
+                    <div className="text-white">Karachi, Pakistan</div>
                   </div>
                   
                   <div className="pt-8">
