@@ -197,7 +197,6 @@ const ImageViewer = ({ isOpen, onClose, image }) => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent 
         className="bg-[#0d0d0d] border-gray-800 p-0 max-w-[95vw] max-h-[95vh] overflow-hidden"
-        style={{ width: 'auto', height: 'auto' }}
       >
         <DialogClose className="absolute right-4 top-4 z-20">
           <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white">
