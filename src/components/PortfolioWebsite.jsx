@@ -174,8 +174,7 @@ const PortfolioWebsite = () => {
                   </h1>
                   <p className="text-gray-300 text-xl max-w-3xl leading-relaxed">
   MERN Stack developer and Computer Science student at IBA with a proven track record in developing comprehensive web applications, from e-commerce platforms to AI recruitment systems. Technical proficiency in 
-  <span className="text-[#4ADE80]"> ReactJS</span>, 
-  <span className="text-[#4ADE80]"> NextJS</span>, and 
+  <span className="text-[#4ADE80]"> ReactJS</span>, and 
   <span className="text-[#4ADE80]"> TailwindCSS</span> for responsive frontends, complemented by 
   <span className="text-[#4ADE80]"> NodeJS</span>, 
   <span className="text-[#4ADE80]"> ExpressJS</span>, and 
