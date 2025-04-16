@@ -212,46 +212,49 @@ const PortfolioWebsite = () => {
                 <div className="relative flex justify-center order-1 lg:order-2">
                   <div className="relative">
                     {/* Abstract Blob SVG Background */}
-                    <svg 
-                      width="500" 
-                      height="500" 
-                      viewBox="0 0 500 500" 
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
-                    >
-                      <defs>
-                        <linearGradient id="blob-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="#1e40af" stopOpacity="0.3" />
-                          <stop offset="50%" stopColor="#4ADE80" stopOpacity="0.2" />
-                          <stop offset="100%" stopColor="#7e22ce" stopOpacity="0.3" />
-                        </linearGradient>
-                      </defs>
-                      <path 
-                        d="M430.9,290.9c25.4-55.6,7.9-137.8-38.9-190.9S267.3,2.2,208.9,28.8S105.2,137.5,62.8,200
-                          s-71.8,127.8-43.7,167.7c28.2,39.9,99.7,37.9,159,42.5c59.4,4.5,106.7,15.6,157.4-7.8S405.6,346.5,430.9,290.9z"
-                        fill="url(#blob-gradient)"
-                        filter="blur(20px)"
-                      />
-                    </svg>
+                                          <svg 
+                        width="100%" 
+                        height="100%" 
+                        viewBox="0 0 500 500" 
+                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 max-w-full"
+                        style={{ maxHeight: '100%' }}
+                      >
+                        <defs>
+                          <linearGradient id="blob-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#1e40af" stopOpacity="0.3" />
+                            <stop offset="50%" stopColor="#4ADE80" stopOpacity="0.2" />
+                            <stop offset="100%" stopColor="#7e22ce" stopOpacity="0.3" />
+                          </linearGradient>
+                        </defs>
+                        <path 
+                          d="M430.9,290.9c25.4-55.6,7.9-137.8-38.9-190.9S267.3,2.2,208.9,28.8S105.2,137.5,62.8,200
+                            s-71.8,127.8-43.7,167.7c28.2,39.9,99.7,37.9,159,42.5c59.4,4.5,106.7,15.6,157.4-7.8S405.6,346.5,430.9,290.9z"
+                          fill="url(#blob-gradient)"
+                          filter="blur(20px)"
+                        />
+                      </svg>
                     
-                    {/* Decorative Elements */}
-                    <div className="absolute -top-5 -left-5 w-10 h-10 border-t-2 border-l-2 border-[#4ADE80]"></div>
-                    <div className="absolute -bottom-5 -right-5 w-10 h-10 border-b-2 border-r-2 border-[#4ADE80]"></div>
-                    
+                              {/* Decorative Elements */}
+                    <div className="absolute -top-3 sm:-top-5 -left-3 sm:-left-5 w-6 h-6 sm:w-10 sm:h-10 border-t-2 border-l-2 border-[#4ADE80]"></div>
+                    <div className="absolute -bottom-3 sm:-bottom-5 -right-3 sm:-right-5 w-6 h-6 sm:w-10 sm:h-10 border-b-2 border-r-2 border-[#4ADE80]"></div>
+
                     {/* Profile Image */}
-                    <div className="w-[300px] h-[400px] relative z-10 rounded-lg overflow-hidden border-2 border-[#222222]">
+                    <div className="w-[200px] h-[275px] sm:w-[250px] sm:h-[325px] md:w-[300px] md:h-[400px] relative z-10 rounded-lg overflow-hidden border-2 border-[#222222]">
                       <img 
                         src="/images/me.webp" 
                         alt="Humayun Raza" 
-                        loading='lazy'
+                        loading="lazy"
                       />
                     </div>
-                    
+
                     {/* Floating Elements */}
-                    <div className="absolute -right-10 top-1/4 w-20 h-20 bg-[#030303] border border-[#222222] rounded-full flex items-center justify-center z-20">
-                      <span className="text-[#4ADE80] text-3xl"><img className='w-10' src='/images/React.webp'/></span>
+                    <div className="absolute -right-4 sm:-right-6 md:-right-10 top-1/4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-[#030303] border border-[#222222] rounded-full flex items-center justify-center z-20">
+                      <span className="text-[#4ADE80]">
+                        <img className='w-6 sm:w-8 md:w-10' src='/images/React.webp' alt="React logo" />
+                      </span>
                     </div>
-                    <div className="absolute -left-5 bottom-1/4 w-14 h-14 bg-[#030303] border border-[#222222] rounded-lg flex items-center justify-center z-20">
-                      <span className="text-[#4ADE80] text-2xl">{"</>"}</span>
+                    <div className="absolute -left-3 sm:-left-4 md:-left-5 bottom-1/4 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#030303] border border-[#222222] rounded-lg flex items-center justify-center z-20">
+                      <span className="text-[#4ADE80] text-base sm:text-xl md:text-2xl">{"</>"}</span>
                     </div>
                   </div>
                 </div>
