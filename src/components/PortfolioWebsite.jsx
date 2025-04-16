@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import ProjectsSection from './ProjectsSection';
+import ContactSection from './ContactInformation';
 
 const PortfolioWebsite = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -487,83 +488,7 @@ const PortfolioWebsite = () => {
             backgroundColor: "#030303",
           }}
         >
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center justify-between mb-4">
-              <div className="text-sm text-gray-500">04</div>
-              <div className="text-sm text-gray-500 font-mono">//CONTACT</div>
-              <div className="text-sm text-gray-500">2020 - 2024</div>
-            </div>
-
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-16">
-              GET IN TOUCH
-            </h2>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              <div>
-                <form className="space-y-8">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="block text-sm text-gray-500 uppercase tracking-wide">Name</label>
-                    <Input id="name" placeholder="Your name" className="bg-[#101010] border-[#222222] h-14 text-white" 
-                      style={{ backgroundColor: "#101010", borderColor: "#222222" }}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="block text-sm text-gray-500 uppercase tracking-wide">Email</label>
-                    <Input id="email" type="email" placeholder="Your email address" className="bg-[#101010] border-[#222222] h-14 text-white" 
-                      style={{ backgroundColor: "#101010", borderColor: "#222222" }}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="block text-sm text-gray-500 uppercase tracking-wide">Message</label>
-                    <Textarea id="message" placeholder="Your message" className="bg-[#101010] border-[#222222] min-h-32 text-white" 
-                      style={{ backgroundColor: "#101010", borderColor: "#222222" }}
-                    />
-                  </div>
-                  <Button className="w-full bg-[#101010] hover:bg-[#1a1a1a] h-14 mt-4">
-                    <span className="text-[#4ADE80] mr-2">
-                      <Mail className="h-5 w-5" />
-                    </span>
-                    Send Message
-                  </Button>
-                </form>
-              </div>
-              <div className="lg:pl-16">
-                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-                <div className="space-y-6">
-                  <div>
-                    <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Email</div>
-                    <div className="text-[#4ADE80]">humayunraza.dev@gmail.com</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Phone</div>
-                    <div className="text-white">+(92)316-1278341</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</div>
-                    <div className="text-white">Karachi, Pakistan</div>
-                  </div>
-                  
-                  <div className="pt-8">
-                    <div className="text-sm text-gray-500 uppercase tracking-wide mb-4">Follow Me</div>
-                    <div className="flex gap-4">
-                      <Button variant="outline" size="icon" className="rounded-md bg-[#101010] border-[#222222] hover:border-[#4ADE80]"
-                        style={{ backgroundColor: "#101010", borderColor: "#222222" }}>
-                        <Github className="h-5 w-5" />
-                      </Button>
-                      <Button variant="outline" size="icon" className="rounded-md bg-[#101010] border-[#222222] hover:border-[#4ADE80]"
-                        style={{ backgroundColor: "#101010", borderColor: "#222222" }}>
-                        <Linkedin className="h-5 w-5" />
-                      </Button>
-                      <Button variant="outline" size="icon" className="rounded-md bg-[#101010] border-[#222222] hover:border-[#4ADE80]"
-                        style={{ backgroundColor: "#101010", borderColor: "#222222" }}>
-                        <Mail className="h-5 w-5" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ContactSection/>
         </section>
       </main>
 
