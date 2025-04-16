@@ -117,7 +117,7 @@ const PortfolioWebsite = () => {
       </aside>
       
       {/* Mobile Burger Menu */}
-      <div className="md:hidden fixed top-0 left-0 w-full z-50 bg-[#030303]/90 backdrop-blur-sm border-b border-[#222222]/30"
+      <div className="md:hidden fixed top-0 left-0 w-auto z-50 bg-[#030303]/90 backdrop-blur-sm border-b border-[#222222]/30"
         style={{
           backgroundColor: "rgba(3, 3, 3, 0.9)",
         }}
@@ -154,6 +154,7 @@ const PortfolioWebsite = () => {
           </nav>
         </div>
       </div>
+            
             
       <main className="container mx-auto px-4 md:px-20 pt-16 md:pt-12">
         {/* About Section */}
