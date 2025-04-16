@@ -25,9 +25,7 @@ const projects = [
     year: "2023",
     image: "/images/heuser.webp",
     images: [
-      "/images/heuser.webp",
-      "/images/heuser-2.webp",
-      "/images/heuser-3.webp"
+      "/images/heuser.webp"
     ],
     github: "#",
     liveUrl: "https://heuserpk.com",
@@ -41,9 +39,7 @@ const projects = [
     year: "Ongoing",
     image: "/images/recruitwise.webp",
     images: [
-      "/images/recruitwise.webp",
-      "/images/recruitwise-2.webp",
-      "/images/recruitwise-3.webp"
+      "/images/recruitwise.webp"
     ],
     github: "#",
     liveUrl: "https://recruitwise-frontend.vercel.app/",
@@ -57,9 +53,7 @@ const projects = [
     year: "Ongoing",
     image: "/images/azzyshardware.webp",
     images: [
-      "/images/azzyshardware.webp",
-      "/images/azzyshardware-2.webp",
-      "/images/azzyshardware-3.webp"
+      "/images/azzyshardware.webp"
     ],
     github: "https://github.com/humayunraza1/ReactJS-E-commerce-Store",
     liveUrl: "https://azzyshardware.store",
