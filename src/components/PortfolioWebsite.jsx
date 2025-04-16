@@ -34,7 +34,7 @@ const PortfolioWebsite = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-    
+
   // Navigation links
   const navLinks = [
     { name: 'About', section: 'about' },
@@ -165,7 +165,7 @@ const PortfolioWebsite = () => {
           }}
         >
           <div className="container mx-auto px-6">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="mb-10 lg:mb-0 order-2 lg:order-1">
                   <p className="text-[#4ADE80] text-sm uppercase tracking-wide font-medium mb-5">
