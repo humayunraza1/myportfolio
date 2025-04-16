@@ -240,15 +240,16 @@ const PortfolioWebsite = () => {
                   </p>
 
                   <div className="mt-12 flex flex-wrap gap-5">
-                    <Button className="bg-[#101010] hover:bg-[#1a1a1a] text-white py-6 px-8 rounded-lg flex items-center space-x-2">
+                    <Button className="bg-[#101010] hover:bg-[#1a1a1a] text-white py-6 px-8 rounded-lg flex items-center space-x-2" onClick={() => scrollToSection('contact')}>
                       <span className="text-[#4ADE80]">
                         <ExternalLink className="mr-2 h-5 w-5" />
                       </span>
-                      <span className="font-medium">HIRE NOW</span>
+                      <span className="font-medium">Get In Touch</span>
                     </Button>
                     <Button 
   variant="outline" 
   className="border-[#222222] text-white hover:text-[#4ADE80] hover:border-[#4ADE80] bg-transparent hover:bg-transparent py-6 px-8 rounded-lg flex items-center space-x-2"
+  onClick={() => window.open("https://drive.google.com/file/d/1Qez3toKvPewOfFBT3tdpk4NKJPNKl3Qv/view?usp=sharing", '_blank')}
 >
   <span className="text-[#4ADE80]">
     <MoveRight className="mr-2 h-5 w-5" />
