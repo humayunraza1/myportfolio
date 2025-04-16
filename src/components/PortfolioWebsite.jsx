@@ -34,38 +34,7 @@ const PortfolioWebsite = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
-  // Project data
-  const projects = [
-      {
-        title: "Heuser PK | Educational Platform",
-        description: "A landing page for an educational institute with a focus on user experience",
-        year: "2023",
-        image: "/images/heuser.webp",
-        github: "#",
-        live: "https://heuserpk.com",
-        tech: ["Next.Js", "MongoDB", "Tailwind CSS"]
-      },
-    {
-      title: "RecruitWise | AI Recruitment Platform",
-      description: "An AI-powered recruitment platform that matches candidates with job openings",
-      year: "Ongoing",
-      image: "/images/recruitwise.webp",
-      github: "#",
-      live: "https://recruitwise-frontend.vercel.app/",
-      tech: ["ReactJS", "MongoDB", "Context API"]
-    },
-    {
-      title: "Azzy's Hardware | E-commerce Store",
-      description: "An e-commerce platform for hardware products with a user-friendly interface",
-      year: "Ongoing",
-      image: "/images/azzyshardware.webp",
-      github: "#",
-      live: "https://azzyshardware.store",
-      tech: ["ReactJS", "Node.js", "Express", "Tailwind CSS", "Context API"]
-    }
-  ];
-  
+    
   // Navigation links
   const navLinks = [
     { name: 'About', section: 'about' },
@@ -107,37 +76,16 @@ const PortfolioWebsite = () => {
   // Experience data
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2022 - Present",
-      description: "Led the development of the company's main SaaS product, improving performance by 40%. Managed a team of 4 developers and implemented CI/CD pipelines."
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications using React and TypeScript. Collaborated with UX designers to implement new features and improve user experience."
-    },
-    {
-      title: "Junior Web Developer",
-      company: "Creative Web Agency",
-      period: "2018 - 2020",
-      description: "Built and maintained websites for various clients using HTML, CSS, JavaScript and WordPress. Participated in client meetings and requirement gathering."
+      title: "Game Developer Intern",
+      company: "Mindstorm Studios - Lahore",
+      period: "June 2024 - July 2024",
+      description: "Built the game to be as mobile-friendly as possible, across all devices. Implemented Unity Animator for smooth character animations, improving gameplay fluidity. Participated in design talks and contributed to the development of gameplay mechanics. Worked closely with a mentor, using their feedback to refine my coding skills and game development methods."
     }
   ];
   
   // Scroll to section function
   const scrollToSection = (section) => {
     sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
-  };
-  
-  // Next/previous project handlers
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % projects.length);
-  };
-  
-  const prevProject = () => {
-    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
   return (
@@ -217,7 +165,7 @@ const PortfolioWebsite = () => {
           }}
         >
           <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="mb-10 lg:mb-0 order-2 lg:order-1">
                   <p className="text-[#4ADE80] text-sm uppercase tracking-wide font-medium mb-5">
@@ -227,17 +175,18 @@ const PortfolioWebsite = () => {
                     HUMAYUN RAZA
                   </h1>
                   <p className="text-gray-300 text-xl max-w-3xl leading-relaxed">
-                    I am a front-end developer with 3 years of proven experience in the field. I am skilled in 
-                    <span className="text-[#4ADE80]"> Search Engine Optimization</span>, 
-                    <span className="text-[#4ADE80]"> Next.js</span>, 
-                    <span className="text-[#4ADE80]"> React.js</span>, 
-                    <span className="text-[#4ADE80]"> Tailwind CSS</span>, and 
-                    <span className="text-[#4ADE80]"> JavaScript</span>. 
-                    Along with that, I have experience in full-stack development using 
-                    <span className="text-[#4ADE80]"> Node.js</span>, 
-                    <span className="text-[#4ADE80]"> Express.js</span>, and 
-                    <span className="text-[#4ADE80]"> MongoDB</span>.
-                  </p>
+  MERN Stack developer and Computer Science student at IBA with a proven track record in developing comprehensive web applications, from e-commerce platforms to AI recruitment systems. Technical proficiency in 
+  <span className="text-[#4ADE80]"> ReactJS</span>, 
+  <span className="text-[#4ADE80]"> NextJS</span>, and 
+  <span className="text-[#4ADE80]"> TailwindCSS</span> for responsive frontends, complemented by 
+  <span className="text-[#4ADE80]"> NodeJS</span>, 
+  <span className="text-[#4ADE80]"> ExpressJS</span>, and 
+  <span className="text-[#4ADE80]"> MongoDB</span> for robust backend architecture. Experienced in implementing server-side rendering, 
+  <span className="text-[#4ADE80]"> WebSockets</span> for real-time communication, 
+  <span className="text-[#4ADE80]"> AWS</span> cloud deployment, and version control via 
+  <span className="text-[#4ADE80]"> Git/GitHub</span>. Additional experience in game development using 
+  <span className="text-[#4ADE80]"> Unity</span>. Dedicated to crafting efficient, scalable solutions with exceptional user experiences.
+</p>
 
                   <div className="mt-12 flex flex-wrap gap-5">
                     <Button className="bg-[#101010] hover:bg-[#1a1a1a] text-white py-6 px-8 rounded-lg flex items-center space-x-2" onClick={() => scrollToSection('contact')}>

@@ -32,9 +32,7 @@ const projects = [
     github: "#",
     liveUrl: "https://heuserpk.com",
     tech: ["Next.Js", "MongoDB", "Tailwind CSS"],
-    challenges: "Creating a responsive and engaging educational platform that effectively communicates the institute's offerings while maintaining optimal performance and accessibility.",
-    solutions: "Implemented Next.js for improved SEO and performance, used Tailwind CSS for responsive design, and integrated MongoDB for dynamic content management."
-  },
+    },
   {
     id: 2,
     title: "RecruitWise | AI Recruitment Platform",
@@ -50,8 +48,6 @@ const projects = [
     github: "#",
     liveUrl: "https://recruitwise-frontend.vercel.app/",
     tech: ["ReactJS", "MongoDB", "Context API"],
-    challenges: "Developing an accurate matching algorithm that effectively connects candidates with appropriate job listings while ensuring a smooth user experience for both employers and job seekers.",
-    solutions: "Utilized advanced filtering mechanisms with Context API for state management, implemented responsive design patterns, and created an intuitive dashboard interface for both candidates and recruiters."
   },
   {
     id: 3,
@@ -68,9 +64,7 @@ const projects = [
     github: "https://github.com/humayunraza1/ReactJS-E-commerce-Store",
     liveUrl: "https://azzyshardware.store",
     tech: ["ReactJS", "Node.js", "Express", "Tailwind CSS", "Context API"],
-    challenges: "Building a secure, scalable e-commerce platform with inventory management, payment processing, and an intuitive product browsing experience.",
-    solutions: "Created a full-stack solution with React for the frontend, Node.js/Express for the backend API, and implemented Context API for state management across the application."
-  }
+    }
 ];
 
 export default function ProjectsSection() {
@@ -211,9 +205,9 @@ export default function ProjectsSection() {
                     <h4 className="text-lg font-semibold text-white mb-2">About the Project</h4>
                     <p className="text-gray-400 mb-4">{selectedProject.longDescription}</p>
                     
-                    <h4 className="text-lg font-semibold text-white mb-2">Challenges & Solutions</h4>
+                    {/* <h4 className="text-lg font-semibold text-white mb-2">Challenges & Solutions</h4>
                     <p className="text-gray-400 mb-2"><span className="text-[#4ADE80]">Challenge:</span> {selectedProject.challenges}</p>
-                    <p className="text-gray-400"><span className="text-[#4ADE80]">Solution:</span> {selectedProject.solutions}</p>
+                    <p className="text-gray-400"><span className="text-[#4ADE80]">Solution:</span> {selectedProject.solutions}</p> */}
                   </div>
                 </div>
 
