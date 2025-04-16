@@ -33,6 +33,20 @@ const projects = [
     },
   {
     id: 2,
+    title: "Voxalink Pro | AI Voice Biometric DApp",
+    description: "A decentralized application for voice biometric authentication",
+    longDescription: "Voxalink Pro is a cutting-edge decentralized application (DApp) that leverages AI voice biometric technology for secure authentication. The platform enables users to authenticate their identity using their unique voice patterns, ensuring a high level of security and convenience in accessing services.",
+    year: "2023",
+    image: "/images/voxalink.webp",
+    images: [
+      "/images/voxalink.webp"
+    ],
+    github: "#",
+    liveUrl: "https://voxalink.vercel.app/",
+    tech: ["Next.Js", "MongoDB", "Tailwind CSS"],
+    },
+  {
+    id: 3,
     title: "RecruitWise | AI Recruitment Platform",
     description: "An AI-powered recruitment platform that matches candidates with job openings",
     longDescription: "RecruitWise is an innovative AI-driven recruitment solution that streamlines the hiring process by intelligently matching candidates with suitable job positions. The platform analyzes candidate profiles and job requirements to suggest optimal matches, saving time and improving recruitment outcomes.",
@@ -46,7 +60,7 @@ const projects = [
     tech: ["ReactJS", "MongoDB", "Context API"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Azzy's Hardware | E-commerce Store",
     description: "An e-commerce platform for hardware products with a user-friendly interface",
     longDescription: "Azzy's Hardware is a full-featured e-commerce platform specializing in hardware products. The store offers a comprehensive shopping experience with product browsing, category filtering, cart management, secure checkout, and order tracking capabilities.",
