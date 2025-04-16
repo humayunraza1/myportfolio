@@ -117,43 +117,40 @@ const PortfolioWebsite = () => {
       </aside>
       
       {/* Mobile Burger Menu */}
-      <div className="md:hidden fixed top-0 left-0 w-auto z-50 bg-[#030303]/90 backdrop-blur-sm border-b border-[#222222]/30"
-        style={{
-          backgroundColor: "rgba(3, 3, 3, 0.9)",
-        }}
-      >
-        <div className="flex justify-between items-center p-4">
-          <button 
-            onClick={() => document.getElementById('mobile-menu').classList.toggle('hidden')}
-            className="text-white p-2"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-        
-        <div id="mobile-menu" className="hidden">
-          <nav className="py-4 px-6 bg-[#0a0a0a] border-b border-[#222222]">
-            {navLinks.map((link) => (
-              <a
-                key={link.section}
-                onClick={() => {
-                  scrollToSection(link.section);
-                  document.getElementById('mobile-menu').classList.add('hidden');
-                }}
-                className={`block py-3 text-sm uppercase font-medium tracking-wider cursor-pointer transition-colors duration-300 ${
-                  activeSection === link.section 
-                    ? 'text-[#4ADE80]' 
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </div>
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-[#030303]/90 backdrop-blur-sm">
+  <div className="flex justify-between items-center p-4">
+    <button 
+      onClick={() => document.getElementById('mobile-menu').classList.toggle('hidden')}
+      className="text-white p-2"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+  
+  <div id="mobile-menu" className="hidden w-full">
+    <nav className="py-4 px-6 bg-[#0a0a0a]">
+      {navLinks.map((link) => (
+        <a
+          key={link.section}
+          onClick={() => {
+            scrollToSection(link.section);
+            document.getElementById('mobile-menu').classList.add('hidden');
+          }}
+          className={`block py-3 text-sm uppercase font-medium tracking-wider cursor-pointer transition-colors duration-300 ${
+            activeSection === link.section 
+              ? 'text-[#4ADE80]' 
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          {link.name}
+        </a>
+      ))}
+    </nav>
+  </div>
+</div>
+
             
             
       <main className="container mx-auto px-4 md:px-20 pt-16 md:pt-12">
