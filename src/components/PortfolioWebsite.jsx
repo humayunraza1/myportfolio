@@ -58,8 +58,8 @@ const PortfolioWebsite = () => {
     {
       title: "Backend",
       skills: [
-        {name: "Node.js", image: '/images/node.webp'}, 
-        {name: "Express", image: "/images/express.webp"}, 
+        {name: "Node.js", image: '/images/nodejs.svg'}, 
+        {name: "Express", image: "/images/Express.webp"}, 
         {name: "MongoDB", image: '/images/MongoDB.webp'},
       ]
     },
@@ -68,7 +68,7 @@ const PortfolioWebsite = () => {
       skills: [
         {name: "Git", image: '/images/git.webp'}, 
         {name: "Docker", image: "/images/docker.webp"}, 
-        {name: "AWS", image: '/images/aws.webp'},
+        {name: "AWS", image: '/images/aws_black.webp'},
         {name: "Azure", image: '/images/azure.webp'},
       ]
     }
@@ -320,110 +320,96 @@ const PortfolioWebsite = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section 
-          ref={sectionRefs.skills} 
-          className="min-h-screen py-16 bg-[#050505]"
-          style={{
-            backgroundColor: "#050505",
-          }}
-        >
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center justify-between mb-4">
-              <div className="text-sm text-gray-500">02</div>
-              <div className="text-sm text-gray-500 font-mono">//SKILLS</div>
-              <div className="text-sm text-gray-500">2020 - 2024</div>
-            </div>
+{/* Skills Section */}
+<section 
+  ref={sectionRefs.skills} 
+  className="min-h-screen py-16 bg-black"
+>
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="flex items-center justify-between mb-4">
+      <div className="text-sm text-gray-500">02</div>
+      <div className="text-sm text-gray-500 font-mono">//SKILLS</div>
+      <div className="text-sm text-gray-500">2020 - 2024</div>
+    </div>
 
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-12">
-              MY EXPERTISE
-            </h2>
+    <h2 className="text-5xl md:text-7xl font-bold text-white mb-12">
+      MY EXPERTISE
+    </h2>
 
-            <div className="relative overflow-hidden py-12">
-              {/* Sliding image carousel */}
-              <div className="flex animate-marquee gap-8" style={{
-                animation: "marquee 30s linear infinite",
-                width: "max-content",
-                transform: "translateX(0)",
-              }}>
-                {skillCategories.flatMap(category => 
-                  category.skills.map((skill, i) => (
-                    <div 
-                      key={`${category.title}-${skill.name}-${i}`} 
-                      className="flex-shrink-0 bg-[#121212] rounded-md overflow-hidden w-[280px]"
-                      style={{
-                        backgroundColor: "#121212"
-                      }}
-                    >
-                      <div className="h-[150px] bg-[#1a1a1a] flex items-center justify-center overflow-hidden relative" style={{ backgroundColor: "#1a1a1a" }}>
-                        <img 
-                          src={`${skill.image}`} // Temporary placeholder - would use skill.image in production
-                          alt={skill.name}
-                          className="opacity-80"
-                          loading='lazy'
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#121212]/70"></div>
-                      </div>
-                      <div className="p-5">
-                        <h3 className="text-white font-medium text-lg">{skill.name}</h3>
-                        <p className="text-gray-400 text-sm mt-1">
-                          {category.title}
-                        </p>
-                      </div>
-                    </div>
-                  ))
-                )}
-                
-                {/* Duplicate for infinite effect */}
-                {skillCategories.flatMap(category => 
-                  category.skills.map((skill, i) => (
-                    <div 
-                      key={`duplicate-${category.title}-${skill.name}-${i}`} 
-                      className="flex-shrink-0 bg-[#121212] rounded-md overflow-hidden w-[280px]"
-                      style={{
-                        backgroundColor: "#121212"
-                      }}
-                    >
-                      <div className="h-[150px] bg-[#1a1a1a] flex items-center justify-center overflow-hidden relative" style={{ backgroundColor: "#1a1a1a" }}>
-                        <img 
-                          src={`${skill.image}`} // Temporary placeholder - would use skill.image in production
-                          alt={skill.name}
-                          className="opacity-80"
-                          loading='lazy'
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#121212]/70"></div>
-                      </div>
-                      <div className="p-5">
-                        <h3 className="text-white font-medium text-lg">{skill.name}</h3>
-                        <p className="text-gray-400 text-sm mt-1">
-                          {category.title}
-                        </p>
-                      </div>
-                    </div>
-                  ))
-                )}
+    <div className="relative overflow-hidden py-8">
+      {/* Minimalist skills grid that scrolls */}
+      <div className="flex animate-marquee" style={{
+        animation: "marquee 40s linear infinite",
+        width: "max-content",
+      }}>
+        {skillCategories.flatMap(category => 
+          category.skills.map((skill, i) => (
+            <div 
+              key={`${category.title}-${skill.name}-${i}`} 
+              className="flex-shrink-0 bg-black border border-gray-500 w-48 h-48"
+              style={{
+                marginRight: "-1px", // Makes borders overlap
+              }}
+            >
+              <div className="h-full w-full flex flex-col items-center justify-center p-4 transition-all duration-300 hover:bg-slate-900">
+                <img 
+                  src={`${skill.image}`}
+                  alt={skill.name}
+                  className="w-30 h-30 mb-4 opacity-70"
+                  loading='lazy'
+                />
+                <h3 className="text-white font-medium text-sm text-center">{skill.name}</h3>
+                <p className="text-gray-500 text-xs mt-1 text-center">
+                  {category.title}
+                </p>
               </div>
-              
-              {/* Gradient overlays */}
-              <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-[#050505] to-transparent z-10"></div>
-              <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-[#050505] to-transparent z-10"></div>
             </div>
+          ))
+        )}
+        
+        {/* Duplicate for infinite effect */}
+        {skillCategories.flatMap(category => 
+          category.skills.map((skill, i) => (
+            <div 
+              key={`duplicate-${category.title}-${skill.name}-${i}`} 
+              className="flex-shrink-0 bg-black border border-gray-500 w-48 h-48"
+              style={{
+                marginRight: "-1px", // Makes borders overlap
+              }}
+            >
+              <div className="h-full w-full flex flex-col items-center justify-center p-4 transition-all duration-300 hover:bg-slate-900">
+                <img 
+                  src={`${skill.image}`}
+                  alt={skill.name}
+                  className="w-30 h-30 mb-4 opacity-70"
+                  loading='lazy'
+                />
+                <h3 className="text-white font-medium text-sm text-center">{skill.name}</h3>
+                <p className="text-gray-500 text-xs mt-1 text-center">
+                  {category.title}
+                </p>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+    </div>
 
-            <style jsx>{`
-              @keyframes marquee {
-                0% {
-                  transform: translateX(0);
-                }
-                100% {
-                  transform: translateX(-50%);
-                }
-              }
-              .animate-marquee {
-                animation: marquee 40s linear infinite;
-              }
-            `}</style>
-          </div>
-        </section>
+    <style jsx>{`
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee 40s linear infinite;
+      }
+    `}</style>
+  </div>
+</section>
 
         {/* Projects Section */}
         <section ref={sectionRefs.projects} > 
