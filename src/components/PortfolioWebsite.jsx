@@ -59,7 +59,7 @@ const PortfolioWebsite = () => {
       title: "Backend",
       skills: [
         {name: "Node.js", image: '/images/nodejs.svg'}, 
-        {name: "Express", image: "/images/Express.webp"}, 
+        {name: "Express", image: "/images/Express.png"}, 
         {name: "MongoDB", image: '/images/MongoDB.webp'},
       ]
     },
